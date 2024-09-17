@@ -1,0 +1,23 @@
+<div class="weather-section">
+  <div class="weather-sub-section">
+    <div class="header">
+      <input type="text" placeholder="Enter city name" [(ngModel)]="city" class="search-input" (keydown.enter)="searchWeather()" />
+      <button (click)="searchWeather()" class="search-button"><i class="fa fa-search search-icon"></i></button>
+    </div>
+    <div class="layout-row">
+      <div class="layout-col-left">
+        {{ cityName || '' }}
+      </div>
+      <div class="layout-col-right">
+        <div class="layout-temperature">
+          <p>{{ temperature !== null ? temperature : '' }}</p>
+        </div>
+        <div class="layout-humidity">
+          <p>{{ humidity !== null ? humidity + ' %' : '' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

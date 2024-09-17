@@ -1,0 +1,122 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder {
+    color: deeppink;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: deeppink;
+}
+
+.weather-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.weather-sub-section {
+    width: 50%;
+    border: none;
+    border-radius: 20px;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.header {
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.search-input {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    color: deeppink;
+    width: calc(30% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.search-button .search-icon {
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.layout-row {
+    width: 100%;
+    display: flex;
+    color: #fff;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.layout-row .layout-col-left {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    border-bottom-left-radius: 20px;
+    font-size: 36px;
+    box-sizing: border-box;
+}
+
+.layout-col-right {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-bottom-right-radius: 20px;
+    box-sizing: border-box;
+}
+
+.layout-col-right .layout-temperature {
+    background-color: purple;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    height: 50%;
+    box-sizing: border-box;
+}
+
+.layout-col-right .layout-humidity {
+    background-color: deeppink;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    height: 50%;
+}
+
+.layout-col-right .layout-temperature p,
+.layout-col-right .layout-humidity p {
+    font-size: 36px;
+    padding-top: 30px;
+}
